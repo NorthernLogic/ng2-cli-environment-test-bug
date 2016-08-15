@@ -2,14 +2,13 @@
 
 import { addProviders, async, inject } from '@angular/core/testing';
 
-import {  TestService } from './test.service';
+import {  ApiService } from './api.service';
 
 
 describe('Service: Api', () => {
-  it('should exist...', () => expect(TestService).toBeTruthy());
+  it('should exist...', () => expect(ApiService).toBeTruthy());
 
   it('should initially request a token', done => {
-    // api = new Api();
     done();
   });
 

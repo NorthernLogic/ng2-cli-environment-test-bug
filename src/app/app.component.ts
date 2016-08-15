@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 
-import { TestService } from './test.service';
+import { ApiService } from './api.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
-  providers: [TestService],
+  providers: [ApiService],
 })
 export class AppComponent {
   title = 'app works!';
 
-  constructor(testService: TestService) {
+  constructor(testService: ApiService) {
     console.log(testService);
   }
 }

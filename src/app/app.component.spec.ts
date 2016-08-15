@@ -4,13 +4,13 @@ import { addProviders, async, inject } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
 import { provide } from '@angular/core';
-import { TestService } from './test.service';
+import { ApiService } from './api.service';
 
 describe('App: EnvironmentTestBug', () => {
   beforeEach(() => {
     addProviders([
       AppComponent,
-      provide(TestService, { useValue: {} }),
+      provide(ApiService, { useValue: {} }),
     ]);
   });
 

@@ -1,7 +1,7 @@
 import { environment } from './';
 
 
-export class TestService {
+export class ApiService {
     constructor() {
         console.log(environment);
     }
